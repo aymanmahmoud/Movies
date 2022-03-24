@@ -1,0 +1,12 @@
+
+<section *ngIf="movieDetails">
+    <div class="content">
+        <h3>{{movieDetails.title}}</h3>
+        <h5>Rating: {{movieDetails.vote_average}} / 10 </h5>
+        <h5>About:</h5>
+        <p>{{movieDetails.overview}}</p>
+    </div>
+    <div class="image-container">
+        <img [src]="imageSource + movieDetails.poster_path" alt="">
+    </div>
+</section>

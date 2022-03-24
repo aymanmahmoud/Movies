@@ -1,0 +1,12 @@
+<div class="search">
+    <div class="serarch-box">
+        <input type="text" (keyup)="inputchanged($event)" placeholder="Finde movie">
+    </div>
+    <div class="search-result" *ngIf="searchResult">
+        <div *ngIf="searchResult.length == 0">No result</div>
+        <div class="item" *ngFor="let item of searchResult"  (click)="showDetails(item.id)">
+            {{item.title}}
+        </div>
+
+    </div>
+</div>

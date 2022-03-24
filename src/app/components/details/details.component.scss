@@ -1,0 +1,19 @@
+section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    .content{
+        width: 50%;
+    }
+    .image-container{
+        width: 50%;
+        img{
+            display: block;
+            margin: auto;
+            width: 80%;
+        }
+    }
+    
+}
